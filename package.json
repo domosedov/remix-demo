@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "remix dev",
     "postinstall": "remix setup node",
-    "start": "remix-serve build",
+    "start": "vercel dev",
+    "start:dev": "remix-serve server/build",
     "deps:check": "ncu",
     "deps:upgrade": "ncu && npm i",
     "watch:types": "tsc -w",
